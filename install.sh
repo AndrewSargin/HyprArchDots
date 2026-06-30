@@ -25,15 +25,21 @@ sudo ufw enable.
 
 #Japanese Font
 
-reap -p "Install Japanese Font? [y/n]" jpFont
-if [ "jpFont" = "y"; then
+reap -p "Install Japanese? [y/n]" jp
+if [ "jp" = "y"; then
     sudo pacman -S otf-ipafont
-    fc-cache -f -v
+    sudo pacman -S fcitx5-im fcitx-mozc
+    sed -i 's/kb_layout = "us,ru"/kb_layout = "us"/' ~/.config/hypr/modules/input.lua
+    sed -i 's/kb_options = "grp:alt_shift_toggle"/kb_options=""/' ~/.config/hypr/modules/input.lua
+    sed -i 's/hl.on("hyprland.start", function ()/a\   hl.exec_cmd("fcitx5 -d")'
+	#Add logic for copying configs for fcitx
 fi
 
 #Font
 
 yay -S ttf-cascadia-coede-nerd
+sudo pacman -S otf-font-awesome
+fc-cache -f -v
 
 #Sound (Controls)
 

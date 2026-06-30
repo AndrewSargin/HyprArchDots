@@ -3,6 +3,7 @@
 
 
 require("modules.variables") 
+require("modules.input")
 require("modules.monitor") 
 require("modules.customFunctions") 
 require("modules.keybinds")
@@ -11,18 +12,8 @@ require("modules.keybinds")
 ---- AUTOSTART ---- 
 -------------------
 
--- See https://wiki.hypr.land/Configuring/Basics/Autostart/
-
--- Autostart necessary processes (like notifications daemons, status bars, etc.) 
--- Or execute your favorite apps at launch like this:
---
--- hl.on("hyprland.start", function ()
--- hl.exec_cmd(terminal)
--- hl.exec_cmd("nm-applet") 
--- hl.exec_cmd("waybar & hyprpaper & firefox") 
--- end)
-
 hl.on("hyprland.start", function () 
+   hl.exec_cmd("fcitx5 -d")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("waybar & hyprpaper & hypridle & swaync")
 end)
@@ -178,37 +169,7 @@ hl.config({ misc = {
     },
 })
 
-
---------------- 
----- INPUT ---- 
----------------
-
-hl.config({ input = {
-        kb_layout = "us,ru", kb_variant = "",
-	kb_model = "",
-	kb_options = "grp:alt_shift_toggle", 
-	kb_rules = "",
-	numlock_by_default = true,
-
-        follow_mouse = 1,
-
-        sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
-
-        touchpad = { natural_scroll = false,
-        },
-    },
-})
-
-hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace"})
-
--- Example per-device config 
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/for more 
-hl.device({
-    name = "epic-mouse-v1", sensitivity = -0.5,
-})
-
-
--------------------------------- 
+--------------------------------
 ---- WINDOWS AND WORKSPACES ---- 
 --------------------------------
 
