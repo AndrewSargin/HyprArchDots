@@ -2,18 +2,15 @@
 -- Configure hyprlock
 -- Configure hypridle
 -- Configure hyprland
--- Configure hyprpaper
 -- Configure hyprpicker
 -- Configure keyboard
--- Install Japanese
 -- Configure waybar
 -- Install some clipboard manager https://wiki.hypr.land/Useful-Utilities/Clipboard-Managers/
 -- Set the install.sh script up
 -- Figure out Wake-on-Lan and smartphone connection
 -- Turn on num lock https://wiki.archlinux.org/title/Activating_numlock_on_bootup
--- Install firewall
 
--- Probably should check on hyprshutdown
+-- Configure  hyprshutdown
 -- Consider using hyprcursor
 -- See fonts like noto-fonts and NerdFont https://wiki.hypr.land/Useful-Utilities/Must-have/
 

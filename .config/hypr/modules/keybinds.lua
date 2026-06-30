@@ -21,7 +21,7 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region")) 
-hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("wofi --show drun"))
+hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + KP_Next", funcs.toggle_tv)
 
 
