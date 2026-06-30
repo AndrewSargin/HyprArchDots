@@ -12,7 +12,16 @@ cd ../
 rm -rf ./yay-bin
 
 #First needed packages installation
-sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker waybar os-prober swaync
+sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker hyprlock hypridle hyprshutdown waybar os-prober swaync
+
+#FIREWALL
+
+sudo pacman -S ufw
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo sytemctl enable --now ufw
+sudo ufw enable.
 
 #Japanese Font
 
