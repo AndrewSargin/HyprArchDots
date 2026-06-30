@@ -12,7 +12,7 @@ cd ../
 rm -rf ./yay-bin
 
 #First needed packages installation
-sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker hyprlock hypridle hyprshutdown waybar os-prober swaync rofi-wayland
+sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker hyprlock hypridle hyprshutdown waybar os-prober swaync rofi-wayland wl-clipboard
 
 #FIREWALL
 

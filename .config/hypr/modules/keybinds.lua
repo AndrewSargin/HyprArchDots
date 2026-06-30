@@ -23,7 +23,8 @@ hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region")) 
 hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + KP_Next", funcs.toggle_tv)
-
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("hyprpicker -a -n"))
 
 
 
