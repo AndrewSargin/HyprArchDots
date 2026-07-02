@@ -43,6 +43,11 @@
     "custom/resourcesmenu": {
         "format": "res",
         "tooltip": false
+    },
+
+    "custom/connectionsmenu": {
+        "format": "con",
+        "tooltip": false
     }
 
 }

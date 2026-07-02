@@ -63,6 +63,7 @@
             "click-to-reveal": true
         },
         "modules": [
+            "custom/connectionsmenu",
             "network",
             "bluetooth"
         ]

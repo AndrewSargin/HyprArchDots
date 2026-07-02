@@ -42,6 +42,7 @@ yay -S ttf-cascadia-coede-nerd
 yay -S ttf-all-the-icons
 yay -S noto-color-emoji-config
 yay -S ttf-nerd-fonts-symbols
+sudo pacman -S ttf-jetbrains-mono-nerd
 sudo pacman -S noto-fonts-emoji
 sudo pacman -S otf-font-awesome
 fc-cache -f -v
