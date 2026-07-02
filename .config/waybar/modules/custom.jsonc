@@ -1,0 +1,48 @@
+{
+    "custom/shutdownmenu": {
+        "format": "sa",
+    },
+
+    "custom/turnoff": {
+        "format": "⏻",
+		"tooltip": false,
+		"on-click": "hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'"
+    },
+
+    "custom/reboot": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "hyprshutdown -t 'Rebooting...' --post-cmd 'reboot'"
+    },
+    
+    "custom/sleep": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "systemctl suspend"
+    },
+
+    "custom/logout": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "hyprshutdown"
+    },
+
+    "custom/media-nowplaying": {
+        "exec": "$HOME/.config/waybar/scripts/medianowplaying.sh",
+        "escape": true,
+        "tooltip": false,
+    },
+    
+    "custom/media-time": {
+        "exec": "$HOME/.config/waybar/scripts/mediatime.sh",
+        "escape": true,
+        "tooltip": false,
+        "interval": 1,
+    },
+
+    "custom/resourcesmenu": {
+        "format": "res",
+        "tooltip": false
+    }
+
+}

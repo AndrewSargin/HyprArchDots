@@ -1,6 +1,9 @@
+@import "styling/colors.css";
+@import "styling/slider.css";
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: ttf-font-awesome, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 

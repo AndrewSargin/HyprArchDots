@@ -12,7 +12,8 @@ cd ../
 rm -rf ./yay-bin
 
 #First needed packages installation
-sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker hyprlock hypridle hyprshutdown waybar os-prober swaync rofi-wayland wl-clipboard
+sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker hyprlock hypridle hyprshutdown waybar-cava os-prober swaync rofi-wayland wl-clipboard cava 
+yay -S python-setuptools zscroll
 
 #FIREWALL
 
@@ -38,6 +39,10 @@ fi
 #Font
 
 yay -S ttf-cascadia-coede-nerd
+yay -S ttf-all-the-icons
+yay -S noto-color-emoji-config
+yay -S ttf-nerd-fonts-symbols
+sudo pacman -S noto-fonts-emoji
 sudo pacman -S otf-font-awesome
 fc-cache -f -v
 

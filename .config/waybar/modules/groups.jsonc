@@ -1,0 +1,72 @@
+{
+
+    "group/audio": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio#microphone",
+            "pulseaudio/slider"
+        ]
+    },
+
+    "group/shutdownbtn": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": true,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "custom/shutdownmenu",
+            "custom/turnoff",
+            "custom/reboot",
+            "custom/sleep",
+            "custom/logout"
+        ]
+    },
+
+    "group/media": {
+        "orientation": "horizontal",
+        "modules": [
+            "cava#left",
+            "mpris",
+            "custom/media-nowplaying",
+            "custom/media-time",
+            "cava#right"
+        ]
+    },
+
+    "group/resources": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": true,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "custom/resourcesmenu",
+            "memory",
+            "cpu",
+            "temperature"
+        ]
+    },
+
+    "group/connections": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": true,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "network",
+            "bluetooth"
+        ]
+    },
+
+}
+
