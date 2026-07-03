@@ -13,7 +13,7 @@
         ]
     },
 
-    "group/shutdownbtn": {
+    "group/shutdown": {
         "orientation": "horizontal",
         "drawer": {
             "transition-duration": 500,

@@ -5,15 +5,8 @@
     	"on-click-middle": "playerctl play-pause",
     	"on-click": "playerctl previous",
     	"on-click-right": "playerctl next",
-	    "scroll-step": 5.0,
     	//	"on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
     	//	"on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
-        "dynamic-order": [
-            "artist",
-            "title",
-            "position",
-            "length"
-        ],   
     	"tooltip": true,
     	"tooltip-format": "{status_icon} {dynamic}\nLeft Click: previous\nMid Click: Pause\nRight Click: Next",
     	"player-icons": {
@@ -38,27 +31,9 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": "󰅶",
+            "deactivated": "󰾪"
         }
-    },
-
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-
-    "memory": {
-        "format": "{}% "
-    },
-
-    "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
     },
 
     "backlight": {
@@ -128,9 +103,9 @@
     "cava#right": {
         //"cava_config": "$XDG_CONFIG_HOME/cava/waybar_cava#1.conf",
         "framerate": 30,
-        "autosens": 0,
+        "autosens": 1,
         "sensitivity": 1,
-        "bars": 6,
+        "bars": 2,
         "lower_cutoff_freq": 50,
         "higher_cutoff_freq": 15000,
         "sleep_timer": 2,

@@ -12,7 +12,7 @@ cd ../
 rm -rf ./yay-bin
 
 #First needed packages installation
-sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker hyprlock hypridle hyprshutdown waybar-cava os-prober swaync rofi-wayland wl-clipboard cava 
+sudo pacman -S hyprpaper hyprpolkitagent hyprshot hyprpicker hyprlock hypridle hyprshutdown waybar-cava os-prober swaync rofi-wayland wl-clipboard cava network-manager-applet
 yay -S python-setuptools zscroll
 
 #FIREWALL

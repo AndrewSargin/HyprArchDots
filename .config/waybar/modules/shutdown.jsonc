@@ -1,0 +1,32 @@
+{
+
+    "custom/shutdownmenu": {
+        "format": "󰣇",
+        "tooltip": false
+    },
+
+    "custom/turnoff": {
+        "format": "󰐥",
+		"tooltip": false,
+		"on-click": "hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'"
+    },
+
+    "custom/reboot": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "hyprshutdown -t 'Rebooting...' --post-cmd 'reboot'"
+    },
+    
+    "custom/sleep": {
+        "format": "󰒲",
+        "tooltip": false,
+        "on-click": "systemctl suspend"
+    },
+
+    "custom/logout": {
+        "format": "󰗽",
+        "tooltip": false,
+        "on-click": "hyprshutdown"
+    },
+
+}

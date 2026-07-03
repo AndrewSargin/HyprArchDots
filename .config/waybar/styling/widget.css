@@ -1,0 +1,61 @@
+@import "colors.css";
+
+#idle_inhibitor {
+    margin: 2px 2px;
+    padding: 8px 17px 8px 15px;
+    background-color: @dark-1;
+    border-radius: 20px;
+    color: @light-1;
+}
+
+#shutdown,
+#resources,
+#connections,
+#media {
+    margin: 2px 2px;
+    padding: 10px 14px;
+    background-color: @dark-1;
+    border-radius: 20px;
+    color: @light-1;
+}
+
+#audio {
+    margin: 2 2px;
+    padding: 0 16px;
+    background-color: @dark-1;
+    border-radius: 20px;
+    color: @light-1;
+}
+
+#custom-resourcesmenu {
+    margin: 0px 2px;
+    padding: 0 0px;
+}
+
+#custom-shutdownmenu,
+#custom-connectionsmenu {
+    margin-right: 4px;
+    padding: 0 0px;
+}
+
+#custom-turnoff,
+#custom-reboot,
+#custom-sleep,
+#custom-logout,
+#memory,
+#cpu,
+#temperature {
+    margin: 0 6px;
+    padding: 0 2px;
+}
+
+#network {
+    margin: 0 0 0 4px;
+    padding: 0 6px;
+}
+
+#bluetooth {
+    margin: 0 0px;
+    padding: 0 10px;
+}
+

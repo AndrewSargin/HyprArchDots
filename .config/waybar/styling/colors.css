@@ -1,7 +1,29 @@
-/**/
-
 @define-color outline_variant #ffffff;
 
 @define-color secondary_fixed_dim #ffffff;
 
 @define-color primary #ffffff;
+
+@define-color surface-container #555555;
+
+@define-color on_primary #555555;
+
+@define-color tetriary_fixed #555555;
+
+@define-color surface_container_highest #555555;
+
+@define-color outline_variant #555555;
+
+@define-color error_container #555555;
+
+@define-color dark-1 #591E34;
+
+@define-color dark-2 #403C3B;
+
+@define-color bright-1 #D9A0C5;
+
+@define-color bright-2 #A7E4F2;
+
+@define-color light-1 #F2DFDF;
+
+@define-color selection #8C7A79;
