@@ -22,7 +22,7 @@
         "interval": 10,
         "thermal-zone": 3,
         "critical-threshold": 80,
-        "format": "<span font='20px'>{icon}</span><span rise='2000'>{temperatureC}°C</span>",
+        "format": "<span font='20px'>{icon}</span> <span rise='2000'>{temperatureC}°C</span>",
         "format-critical":"󱗗{temperatureC}°C",
         "format-icons": [
             "",

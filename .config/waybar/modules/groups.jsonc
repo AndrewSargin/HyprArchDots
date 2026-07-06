@@ -58,7 +58,8 @@
             "custom/resourcesmenu",
             "memory",
             "cpu",
-            "temperature"
+            "temperature",
+            "custom/nvidia"
         ]
     },
 

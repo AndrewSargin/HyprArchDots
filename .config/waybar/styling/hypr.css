@@ -1,5 +1,11 @@
 @import "colors.css";
 
+#workspaces {
+  border-left: 2px solid @primary;
+  border-radius: 10 0 0 0px;
+  padding: 0 2px;
+}
+
 #workspaces button {
   padding: 0 4px;
   margin: 2 2px;

@@ -28,6 +28,14 @@
         "interval": 1,
         "return-type": "json",
         "format": "{text}"
+    },
+
+    "custom/nvidia": {
+        "exec": "$HOME/.config/waybar/scripts/nvidia-gpu.sh",
+        "interval": 10,
+        "return-type": "json",
+        "format": "{}",
+        "escape": false
     }
 
 }

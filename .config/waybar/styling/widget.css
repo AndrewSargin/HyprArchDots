@@ -105,14 +105,14 @@
 
 #custom-media-time {
     margin: 0 2px;
-    padding: 0 4 0 0px;
+    padding: 0 6 0 0px;
     border-right: 2px solid @primary;
+    border-radius: 0 10 0 10px;
 }
 
 #clock {
     margin: 0 2px;
-    padding: 0 4 0 0px;
-    border-right: 2px solid @primary;
+    padding: 0 6 0 2px;
 }
 
 #right {
@@ -146,4 +146,12 @@
 #temperature {
     margin: 0 2px;
     padding: 0 4px;
+}
+
+#custom-nvidia {
+    margin: 0 2px;
+    padding: 0 2px;
+    border-left: 2px solid @primary;
+    border-right: 2px solid @primary;
+    border-radius: 0 10 0 10px;
 }

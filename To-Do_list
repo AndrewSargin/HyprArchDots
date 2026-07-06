@@ -2,13 +2,11 @@
 -- Configure hyprlock
 -- Configure hyprland
 -- Configure keyboard
--- Configure waybar
 -- Install some clipboard manager https://wiki.hypr.land/Useful-Utilities/Clipboard-Managers/
 -- Set the install.sh script up
 -- Figure out Wake-on-Lan and smartphone connection
 -- Turn on num lock https://wiki.archlinux.org/title/Activating_numlock_on_bootup
 
--- Connect hyprshutdown to turnoff and reboot buttons in waybar+sddm
 -- Consider using hyprcursor
 -- See fonts like noto-fonts and NerdFont https://wiki.hypr.land/Useful-Utilities/Must-have/
 
