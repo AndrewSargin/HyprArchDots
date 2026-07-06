@@ -32,11 +32,18 @@
     "group/media": {
         "orientation": "horizontal",
         "modules": [
-            "cava#left",
             "mpris",
             "custom/media-nowplaying",
             "custom/media-time",
-            "cava#right"
+        ]
+    },
+
+    "group/central": {
+        "orientation": "horizontal",
+        "modules": [
+            "group/media",
+            "clock",
+            "hyprland/workspaces"
         ]
     },
 
@@ -60,14 +67,31 @@
         "drawer": {
             "transition-duration": 500,
             "transition-left-to-right": true,
-            "click-to-reveal": true
+            "click-to-reveal": false
         },
         "modules": [
-            "custom/connectionsmenu",
             "network",
             "bluetooth"
         ]
     },
+
+    "group/right": {
+        "orientation": "horizontal",
+        "modules": [
+            "group/resources",
+            "custom/fcitx5",
+            "battery"
+        ]
+    },
+     
+    "group/left": {
+        "orientation": "horizontal",
+        "modules": [
+            "group/connections",
+            "idle_inhibitor",
+            "group/audio"
+        ]
+    }
 
 }
 

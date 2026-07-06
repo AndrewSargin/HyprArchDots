@@ -22,22 +22,15 @@
 
     "modules-left": [
         "group/shutdown",
-        "idle_inhibitor",
-        "group/resources",
-        "group/connections",
-        "group/audio"
+        "group/left"
     ],
 
     "modules-center": [
-        "group/media"
+        "group/central"
     ],
 
     "modules-right": [
-        "hyprland/workspaces",
-        "hyprland/submap",
-        "clock",
-        "tray",
-        "battery"
+        "group/right"
     ]
  
 }

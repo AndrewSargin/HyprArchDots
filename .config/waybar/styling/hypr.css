@@ -1,59 +1,44 @@
 @import "colors.css";
 
-#workspaces {
-  margin: 2px 2px;
-  padding: 2px 2px;
-  background-color: @dark-1;
-  border-radius: 20px;
-}
-
 #workspaces button {
-  min-width: 10px;
   padding: 0 4px;
-  margin: 0 0px;
+  margin: 2 2px;
   background: transparent;
-  border-radius: 35px;
-  color: @bright-2;
+  border-radius: 5px;
+  color: @primary;
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
 
 #workspaces button.active {
-  padding: 0 2px;
-  margin: 0 0px;
-  background-color: @bright-1;
-  color: @dark-1;
+  padding: 0 4px;
+  margin: 2 2px;
+  background-color: @primary;
+  color: @on_primary;
 }
 
 #workspaces button.special {
-  color: @bright-2;
+  color: @accent;
 }
 
 #workspaces button:hover {
-  background-color: @bright-2;
-  color: @dark-1;
+  background-color: @on_primary;
+  color: @primary;
 }
 
 #workspaces button.active:hover {
   background-color: @primary;
-  color: @dark-1;
+  color: @surface;
 }
 
 #workspaces button.empty {
-  color: @bright-2;
+  color: @secondary;
 }
 
 #workspaces button.empty:hover {
-    color: @dark-1;
+    color: @primary;
 }
 
 #workspaces button.urgent {
-  color: @error_container;
+  color: @error;
 }
 
-#workspaces button label:first-child {
-  margin-right: 8px;
-}
-
-#workspaces button label:last-child {
-  margin-left: 2px;
-}

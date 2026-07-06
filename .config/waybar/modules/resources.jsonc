@@ -2,7 +2,7 @@
 
     "memory": {
         "interval": 10,
-        "format": "{percentage}% ",
+        "format": "<span font='20px'></span> <span rise='2000'>{percentage}%</span>",
         "tooltip": false,
         "max-length": 10
     },
@@ -10,7 +10,7 @@
     "cpu": {
         "tooltip": false,
         "interval": 10,
-        "format": "󰻠 {usage}%",
+        "format": "<span font='20px'>󰻠</span> <span rise='2000'>{usage}%</span>",
         "states": {
             "warning": 75,
             "critical": 90
@@ -22,7 +22,7 @@
         "interval": 10,
         "thermal-zone": 3,
         "critical-threshold": 80,
-        "format": "{icon}{temperatureC}°C",
+        "format": "<span font='20px'>{icon}</span><span rise='2000'>{temperatureC}°C</span>",
         "format-critical":"󱗗{temperatureC}°C",
         "format-icons": [
             "",

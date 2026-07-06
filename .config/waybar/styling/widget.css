@@ -1,61 +1,149 @@
 @import "colors.css";
 
-#idle_inhibitor {
-    margin: 2px 2px;
-    padding: 8px 17px 8px 15px;
-    background-color: @dark-1;
-    border-radius: 20px;
-    color: @light-1;
+
+#shutdown {
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px;
+    background-color: @surface;
+    font-size: 20;
+    border-radius: 10px;
+    color: @primary;
 }
 
-#shutdown,
-#resources,
-#connections,
-#media {
-    margin: 2px 2px;
-    padding: 10px 14px;
-    background-color: @dark-1;
-    border-radius: 20px;
-    color: @light-1;
+
+#custom-shutdownmenu {
+    margin: 0px 0px;
+    padding:0 9 1 5px;
 }
 
-#audio {
-    margin: 2 2px;
-    padding: 0 16px;
-    background-color: @dark-1;
-    border-radius: 20px;
-    color: @light-1;
-}
-
-#custom-resourcesmenu {
-    margin: 0px 2px;
-    padding: 0 0px;
-}
-
-#custom-shutdownmenu,
-#custom-connectionsmenu {
-    margin-right: 4px;
-    padding: 0 0px;
-}
 
 #custom-turnoff,
 #custom-reboot,
 #custom-sleep,
-#custom-logout,
-#memory,
-#cpu,
-#temperature {
-    margin: 0 6px;
-    padding: 0 2px;
+#custom-logout {
+    margin: 0 2px;
+}
+
+#custom-turnoff {
+    padding: 0 9 0 7px;
+}
+
+#custom-reboot {
+    padding: 0 10 0 6px;
+}
+
+#custom-sleep {
+    padding: 0 11 0 5px;
+}
+
+#custom-logout {
+    padding: 0 10 0 6px;
+}
+
+#left {
+    margin: 2 2px;
+    padding: 0 0px;
+    background-color: @surface;
+    border-radius: 10px;
+    color: @primary;
+    font-size: 20;
+}
+
+#connections {
+    margin: 0 2px;
+    padding: 0 0 0 0px;
 }
 
 #network {
-    margin: 0 0 0 4px;
-    padding: 0 6px;
+    min-height: 0;
+    margin: 0 2px;
+    padding: 0 8 0 4px;
 }
 
 #bluetooth {
-    margin: 0 0px;
-    padding: 0 10px;
+    margin: 0 2px;
+    padding: 0 5px;
 }
 
+#idle_inhibitor {
+    margin: 0 4 0 2px;
+    padding: 0 8 0 4px;
+}
+
+#audio {
+    margin-left: 2px;
+    padding: 0 2 0 0px;
+}
+
+#pulseaudio {
+    margin-right: 2px;
+    padding: 0 13 0 1px;
+}
+
+#pulseaudio.microphone {
+    margin: 0 2px;
+    padding: 0 6px;
+}
+
+#central {
+    margin: 2 0px;
+    border-radius: 10px;
+    background-color: @surface;
+    color: @primary;    
+}
+
+#mpris {
+    margin: 0 2 0 4px;
+    padding: 0 6 0 0px;
+    font-size: 20px;
+}
+
+#custom-media-nowplaying {
+    margin: 0 2px;
+    padding: 0 2px;
+}
+
+#custom-media-time {
+    margin: 0 2px;
+    padding: 0 4 0 0px;
+    border-right: 2px solid @primary;
+}
+
+#clock {
+    margin: 0 2px;
+    padding: 0 4 0 0px;
+    border-right: 2px solid @primary;
+}
+
+#right {
+    margin: 2 2px;
+    padding: 0 0px;
+    background-color: @surface;
+    border-radius: 10px;
+    color: @primary;    
+}
+
+#custom-resourcesmenu {
+    margin: 0 2px;
+    padding: 0 7px;
+}
+
+#custom-fcitx5 {
+    margin: 0 4 0 0px;
+    padding: 0 3px;
+}
+
+#memory {
+    margin: 0 2px;
+    padding: 0 4px;
+}
+
+#cpu {
+    margin: 0 2px;
+    padding: 0 4px;
+}
+
+#temperature {
+    margin: 0 2px;
+    padding: 0 4px;
+}

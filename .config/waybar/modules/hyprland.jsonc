@@ -1,14 +1,12 @@
 {
     "hyprland/workspaces": {
-	    "format": "[ {id} ]",
+	    "format": "{id}",
         "on-click": "activate",
         "persistent-workspaces": {
             "HDMI-A-1": [1, 2, 3, 4],
             "DP-1": [1, 2, 3, 4],
             "DVI-D-1": [1, 2, 3, 4]
         }
-    },
-
-
+    }
 
 }

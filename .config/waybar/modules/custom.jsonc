@@ -3,6 +3,9 @@
         "exec": "$HOME/.config/waybar/scripts/medianowplaying.sh",
         "escape": true,
         "tooltip": false,
+        "on-click-middle": "playerctl play-pause",
+    	"on-click": "playerctl previous",
+    	"on-click-right": "playerctl next"
     },
     
     "custom/media-time": {
@@ -10,16 +13,21 @@
         "escape": true,
         "tooltip": false,
         "interval": 1,
+        "on-click-middle": "playerctl play-pause",
+    	"on-click": "playerctl previous",
+    	"on-click-right": "playerctl next"
     },
 
     "custom/resourcesmenu": {
-        "format": "󰇅",
+        "format": "<span font='20px'>󰇅</span>",
         "tooltip": false
     },
-
-    "custom/connectionsmenu": {
-        "format": "󱘖",
-        "tooltip": false
+    
+    "custom/fcitx5": {
+        "exec": "$HOME/.config/waybar/scripts/fcitx5-status.sh",
+        "interval": 1,
+        "return-type": "json",
+        "format": "{text}"
     }
 
 }
