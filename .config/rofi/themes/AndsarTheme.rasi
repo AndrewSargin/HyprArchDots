@@ -1,0 +1,144 @@
+/*******************************************************************************
+ * ROFI Color theme
+ * Based on adi1090x`s type-1 style-1 theme (https://github.com/adi1090x/rofi)
+ * User: Andsar
+ * Copyright: Andsar
+ ********************************************************************************/
+@import "~/.config/rofi/themes/colors/colors.rasi"
+
+* {
+    font: "JetBrains Mono Nerd Font 12";
+}
+
+configuration {
+    show-icons: true;
+}
+
+window {
+    transparency:       "real";
+    location:           center;
+    anchor:             center;
+    fullscreen:         false;
+    background-color:   @background;
+    border:             1px solid;
+    border-radius:      10px;
+    border-color:       @outline;
+    padding:            5;
+}
+
+mainbox {
+
+    enabled:            true;
+    spacnig:            10px;
+    border:             0;
+    border-radius:      10px;
+    padding:            0;
+    background-color:   @surface;
+    children:           ["inputbar", "message", "listview"];
+}
+
+inputbar {
+    enabled:            true;
+    spacing:            10px;
+    background-color:   transparent;
+    border-radius:      10px;
+    text-color:         @on-primary;
+    padding:            1px;
+    children:           ["textbox-prompt-colon", "prompt", "entry"];
+}
+
+textbox-prompt-colon {
+    enabled:            true;
+    expand:             false;
+    str:                "";
+    padding:            10px 13px;
+    border-radius:      10px;
+    background-color:   transparent;
+    text-color:         @primary;
+}
+
+prompt {
+    enabled:            true;
+    padding:            10px;
+    border-radius:      0px;
+    background-color:   @background;
+    text-color:         @primary;
+}
+
+entry {
+    enabled:            true;
+    text-color:         @primary;
+    padding:            10px 0 0 0;
+}
+
+message {
+    enabled:            true;
+    margin:             0px;
+    padding:            10px;
+    border:             0px solid;
+    border-color:       @blue;
+    text-color:         @primary;
+    background-color:   @surface;
+}
+
+textbox {
+    background-color:   inherit;
+    text-color:         inherit;
+    vertical-align:     0.5;
+    horizontal-align:   0.0;
+}
+
+listview {
+    enabled:            true;
+    columns:            1;
+    lines:              6;
+    cycle:              true;
+    scrollbar:          false;
+    layout:             vertical;
+    spacing:            5px;
+    background-color:   transparent;
+}
+
+element {
+    enabled:            true;
+    padding:            10px;
+    border:             0px solid;
+    border-radius:      10px;
+    border-color:       @outline;
+    background-color:   transparent;
+    text-color:         @on-primary;
+    cursor:             pointer;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    cursor:             inherit;
+    vertical-align:     0.5;
+    horizontal-align:   0.0;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color:   @background;
+    text-color:         @primary;
+}
+
+element normal.urgent,
+element alternate.urgent,
+element selected.urgent {
+    background-color:   @secondary;
+    text-color:         @on-secondary;
+}
+
+element normal.active,
+element alternate.active,
+element selected.urgent {
+    background-color: @secondary;
+    text-color:       @on-secondary;
+}
+
+element selected.normal {
+    background-color: @primary;
+    text-color:       @on-primary;
+}
