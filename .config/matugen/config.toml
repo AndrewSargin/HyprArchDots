@@ -12,3 +12,7 @@
     
     input_path = '~/.config/matugen/templates/rofi.rasi'
     output_path = '~/.config/rofi/themes/colors/colors.rasi'
+
+[templates.kitty]
+    input_path = '~/.config/matugen/templates/kitty.conf'
+    output_path = '~/.config/kitty/kitty-colors.conf'
