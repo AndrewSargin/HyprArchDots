@@ -19,7 +19,7 @@ window {
     location:           center;
     anchor:             center;
     fullscreen:         false;
-    background-color:   @background;
+    background-color:   @surface;
     border:             1px solid;
     border-radius:      10px;
     border-color:       @outline;
@@ -53,7 +53,7 @@ textbox-prompt-colon {
     str:                "";
     padding:            10px 13px;
     border-radius:      10px;
-    background-color:   transparent;
+    background-color:   @surface;
     text-color:         @primary;
 }
 
@@ -61,7 +61,7 @@ prompt {
     enabled:            true;
     padding:            10px;
     border-radius:      0px;
-    background-color:   @background;
+    background-color:   transparent;
     text-color:         @primary;
 }
 
@@ -69,6 +69,7 @@ entry {
     enabled:            true;
     text-color:         @primary;
     padding:            10px 0 0 0;
+    background-color:   transparent;
 }
 
 message {
@@ -76,7 +77,7 @@ message {
     margin:             0px;
     padding:            10px;
     border:             0px solid;
-    border-color:       @blue;
+    border-color:       @outline;
     text-color:         @primary;
     background-color:   @surface;
 }
@@ -104,10 +105,16 @@ element {
     padding:            10px;
     border:             0px solid;
     border-radius:      10px;
-    border-color:       @outline;
+    border-color:       @surface;
     background-color:   transparent;
-    text-color:         @on-primary;
+    text-color:         @primary;
     cursor:             pointer;
+}
+
+element-icon {
+    size:               1 em;
+    padding:            0 10 0 0px;
+    background-color:   transparent;
 }
 
 element-text {
@@ -120,7 +127,7 @@ element-text {
 
 element normal.normal,
 element alternate.normal {
-    background-color:   @background;
+    background-color:   transparent;
     text-color:         @primary;
 }
 
