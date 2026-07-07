@@ -33,14 +33,14 @@ mainbox {
     border:             0;
     border-radius:      10px;
     padding:            0;
-    background-color:   @surface;
+    background-color:   transparent;
     children:           ["inputbar", "message", "listview"];
 }
 
 inputbar {
     enabled:            true;
     spacing:            10px;
-    background-color:   transparent;
+    background-color:   @surface;
     border-radius:      10px;
     text-color:         @on-primary;
     padding:            1px;
@@ -53,7 +53,7 @@ textbox-prompt-colon {
     str:                "";
     padding:            10px 13px;
     border-radius:      10px;
-    background-color:   @surface;
+    background-color:   transparent;
     text-color:         @primary;
 }
 
