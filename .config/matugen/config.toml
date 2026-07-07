@@ -16,3 +16,7 @@
 [templates.kitty]
     input_path = '~/.config/matugen/templates/kitty.conf'
     output_path = '~/.config/kitty/kitty-colors.conf'
+
+[templates.fcitx5]
+    input_path = '~/.config/matugen/templates/fcitx5.conf'
+    output_path = '~/.local/share/fcitx5/themes/Andsar/theme.conf'

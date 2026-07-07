@@ -32,9 +32,14 @@ sudo ufw enable.
     sudo pacman -S otf-ipafont
     sudo pacman -S fcitx5-im fcitx-mozc
 
+#FCITX5 Theme
+
+mkdir -p ~/.local/share/fcitx5/themes/Andsar
+#copy theme to that dir
+
 #Font
 
-yay -S ttf-cascadia-coede-nerd
+yay -S ttf-cascadia-code-nerd
 yay -S ttf-all-the-icons
 yay -S noto-color-emoji-config
 yay -S ttf-nerd-fonts-symbols

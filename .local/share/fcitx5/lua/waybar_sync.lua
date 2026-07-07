@@ -1,0 +1,1 @@
+/home/andrew/.config/fcitx5/lua/waybar_sync.lua
