@@ -27,10 +27,15 @@ sudo ufw allow ssh
 sudo sytemctl enable --now ufw
 sudo ufw enable.
 
+sudo systemctl enable --now NetworkManager
+
 #Language
 
     sudo pacman -S otf-ipafont
     sudo pacman -S fcitx5-im fcitx-mozc
+
+#GTK Theme
+sudo pacman -S adw-gtk-theme
 
 #FCITX5 Theme
 

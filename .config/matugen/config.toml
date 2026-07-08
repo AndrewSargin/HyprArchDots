@@ -20,3 +20,13 @@
 [templates.fcitx5]
     input_path = '~/.config/matugen/templates/fcitx5.conf'
     output_path = '~/.local/share/fcitx5/themes/Andsar/theme.conf'
+
+[templates.gtk3]
+    input_path = '~/.config/matugen/templates/gtk.css'
+    output_path = '~/.config/gtk-3.0/gtk-colors.css'
+    post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+    input_path = '~/.config/matugen/templates/gtk.css'
+    output_path = '~/.config/gtk-4.0/gtk-colors.css'
+    post_hook = '~/.config/matugen/post-hook-scripts/gtk-themes-reload.sh'
