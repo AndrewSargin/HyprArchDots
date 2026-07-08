@@ -30,3 +30,7 @@
     input_path = '~/.config/matugen/templates/gtk.css'
     output_path = '~/.config/gtk-4.0/gtk-colors.css'
     post_hook = '~/.config/matugen/post-hook-scripts/gtk-themes-reload.sh'
+
+[templates.hyprland]
+    input_path = '~/.config/matugen/templates/hyprland.lua'
+    output_path = '~/.config/hypr/colors.lua'

@@ -3,5 +3,5 @@
 --------------------------------------
 
 terminal    = "kitty"
-fileManager = "dolphin"
+fileManager = "nautilus"
 menu        = "hyprlauncher"
