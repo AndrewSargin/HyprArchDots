@@ -132,7 +132,7 @@ if pacman -Q sddm &>/dev/null; then
     git clone --depth=1 https://github.com/Keyitdev/sddm-astronaut-theme.git
     cd sddm-astronaut-theme
 
-    sudo ./setup.sh
+    ./setup.sh
 
     cd "$CURRENT_DIR"
     rm -rf "$TMP_DIR"
