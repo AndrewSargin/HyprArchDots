@@ -13,12 +13,14 @@
             ]
             },
         "on-click": "pavucontrol",
-        "tooltip-format": "Output: {volume}%"
+        "on-click-right": "~/.config/waybar/scripts/audio-selector.sh",
+        "tooltip-format": "Output: {volume}%\n{desc}"
     },
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "format-source": "",
-        "format-source-muted": ""
+        "format-source-muted": "",
+        "tooltip": false
     },
     "pulseaudio.slider": {
         "min" : 0,
