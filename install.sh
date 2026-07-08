@@ -1,8 +1,11 @@
 #!/bin/bash
 
-
 #Install script for my needs
 
+if [ "$EUID -ne 0 ]; then
+    echo "root is required"
+    exec sudo "$0" "$@"
+fi
 
 #Basic Installation
 
@@ -36,6 +39,14 @@ sudo systemctl enable --now NetworkManager
 
 #GTK Theme
 sudo pacman -S adw-gtk-theme
+
+#SDDM Theme
+
+sudo pacman -S gum
+cd ~/Downloads
+git clone https://github.com/Keyitdev/sddm-astronaut-theme.git
+cd sddm-astronaut-theme
+bash setup.sh
 
 #FCITX5 Theme
 
