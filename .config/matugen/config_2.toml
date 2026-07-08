@@ -1,0 +1,8 @@
+[config]
+
+    reload_apps = false
+
+[templates.hyprlock]
+
+    input_path = '~/.config/matugen/templates/hyprlock.conf'
+    output_path = '~/.config/hypr/hyprlock/colors.conf'
