@@ -54,7 +54,7 @@ fi
 
 echo "Installing main packages..."
 
-# Ignored if ins't installed or can't be uninstalled
+# Ignored if isn't installed or can't be uninstalled
 sudo pacman -R --noconfirm pulseaudio pulseaudio-bluetooth 2>/dev/null || true
 
 sudo pacman -S --needed --noconfirm \
@@ -205,7 +205,7 @@ if confirm "Install tablet drivers?"; then
     sudo rmmod wacom hid_uclogic || true
 fi
 
-if confirm "Install creative apps? (Blender, Krita)"
+if confirm "Install creative apps? (Blender, Krita)"; then
     sudo pacman -S --needed --noconfirm \
         krita \
         blender
@@ -218,18 +218,28 @@ fi
 if confirm "Backup .config and .local folders?"; then
 
     echo "Making backups..."
-    
+
     BACKUP_DIR="$HOME/old_configs/$(date +%d-%m-%Y_%H-%M)"
 
-    mkdir -p "$BACKUP_DIR" || exit 1
+    mkdir -p "$BACKUP_DIR/.config"
 
-    if [[ -d "$HOME/.config" ]]; then
-        cp -a "$HOME/.config" "$BACKUP_DIR/"
-    fi
+    for dir in "$SCRIPT_DIR/.config"/*; do
+        name=$(basename "$dir")
 
-    if [[ -d "$HOME/.local" ]]; then
-        cp -a "$HOME/.local" "$BACKUP_DIR/"
-    fi
+        if [[ -d "$HOME/.config/$name" ]]; then
+            cp -a "$HOME/.config/$name" "$BACKUP_DIR/.config/"
+        fi
+    done
+
+    mkdir -p "$BACKUP_DIR/.local/share"
+
+    for dir in "$SCRIPT_DIR/.local/share"/*; do
+        name=$(basename "$dir")
+        
+        if [[ -d "$HOME/.local/share/$name" ]]; then
+            cp -a "$HOME/.local/share/$name" "$BACKUP_DIR/.local/share"
+        fi
+    done
 
 fi
 echo "Installing configuration files..."
