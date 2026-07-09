@@ -16,7 +16,7 @@ local colors = require("colors")
 hl.on("hyprland.start", function () 
    hl.exec_cmd("fcitx5 -d")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
-   hl.exec_cmd("waybar & hyprpaper & hypridle & swaync")
+   hl.exec_cmd("waybar & hyprpaper & hypridle & otd-daemon & swaync")
 end)
 
 
