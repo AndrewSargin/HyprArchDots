@@ -338,6 +338,8 @@ if confirm "Enable dual boot (GRUB, os-prober)?"; then
 
         if grep -q "^GRUB_DISABLE_OS_PROBER=" /etc/default/grub; then
             sudo sed -i "s|^GRUB_DISABLE_OS_PROBER=.*|GRUB_DISABLE_OS_PROBER=false|" /etc/default/grub
+        elif grep -q "^#GRUB_DISABLE_OS_PROBER=" /etc/default/grub; then
+            sudo sed -i "s|^#GRUB_DISABLE_OS_PROBER=.*|GRUB_DISABLE_OS_PROBER=false|" /etc/default/grub
         else
             echo "GRUB_DISABLE_OS_PROBER=false" | sudo tee -a /etc/default/grub
         fi
@@ -378,10 +380,13 @@ if confirm "Install GRUB theme?"; then
                 return 1
             fi
         
+            sudo mkdir -p /boot/grub/themes
             sudo cp -r "$theme_src" /boot/grub/themes/
 
             if grep -q "^GRUB_THEME=" /etc/default/grub; then
                 sudo sed -i "s|^GRUB_THEME=.*|GRUB_THEME=\"$theme_dst/theme.txt\"|" /etc/default/grub
+            elif grep -q "^#GRUB_THEME=" /etc/default/grub; then
+                sudo sed -i "s|^#GRUB_THEME=.*|GRUB_THEME=\"$theme_dst/theme.txt\"|" /etc/default/grub
             else
                 echo "GRUB_THEME=\"$theme_dst/theme.txt\"" | sudo tee -a /etc/default/grub
             fi

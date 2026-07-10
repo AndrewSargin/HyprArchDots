@@ -3,7 +3,7 @@
 Personal Arch Linux bootstrap script and configuration files for my Hyprland setup.
 
 ## Preview
-![Desktop](screenshots/desktop.png)
+![Desktop](screenshots/Desktop.png)
 ![Desktop with apps](screenshots/Desktop_with_apps.png)
 ## WARNING!
 * **The installation script (`install.sh`) is intended for a fresh Arch Linux with Hyprland.**
