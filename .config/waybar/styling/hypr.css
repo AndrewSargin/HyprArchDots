@@ -31,17 +31,16 @@
   color: @primary;
 }
 
-#workspaces button.active:hover {
-  background-color: @primary;
-  color: @surface;
-}
-
 #workspaces button.empty {
-  color: @secondary;
+  color: @outline;
 }
 
 #workspaces button.empty:hover {
     color: @primary;
+}
+
+#workspaces button.empty.active {
+    color: @on_primary;
 }
 
 #workspaces button.urgent {

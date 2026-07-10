@@ -5,6 +5,7 @@
 @define-color secondary #c1c6dd;
 @define-color on_secondary #2a3042;
 @define-color surface rgba(30, 31, 37, 0.5);
+@define-color on_surface #e3e2e9;
 @define-color surface_high #292a2f;
 @define-color surface_low #1a1b21;
 @define-color accent #e1bbdc;
