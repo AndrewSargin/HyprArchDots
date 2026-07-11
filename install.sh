@@ -43,7 +43,8 @@ create_tmp() {
 }
 
 error_handler() {
-    error "Installation failed on line ${BASH_LINENO[0]}"
+    local exit_code=$?
+    error "Command '${BASH_COMMAND}' failed with exit code ${exit_code} on line ${BASH_LINENO[0]}"
 }
 
 trap error_handler ERR
@@ -114,7 +115,10 @@ sudo pacman -S --needed --noconfirm \
     network-manager-applet \
     matugen \
     pipewire-pulse \
-    nautilus
+    nautilus \
+    nvim \
+    stow \
+    obsidian
 
 yay -S --needed --noconfirm \
     python-setuptools \
@@ -269,6 +273,15 @@ if confirm "Install VLC Player?"; then
     success "VLC is installed"
 fi
 
+#==================================
+#            UTC time             #
+#==================================
+
+if confirm "Set time UTC+3 (Moscow)? Do this only if you 
+    set your timezone as UTC in archinstall script."; then
+    timedatectl set-timezone Europe/Moscow
+    success "Time set to Moscow"
+fi
 #==================================
 #          Creative apps          #
 #==================================
