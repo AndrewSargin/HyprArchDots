@@ -178,10 +178,19 @@ sudo pacman -S --needed --noconfirm \
 sudo pacman -S --needed --noconfirm adw-gtk-theme
 
 #==================================
-#           SDDM Theme            #
+#     SDDM Theme and Numlock      #
 #==================================
 
 if pacman -Q sddm &>/dev/null; then
+   
+    info "Turning in Numlock"
+
+    sudo mkdir -p /etc/sddm.conf.d
+    echo "[General]
+    Numlock=on" | sudo tee /etc/sddm.conf.d/numlock.conf
+
+    success "Numlock is on by default now"
+
     info "Installing SDDM theme"
 
     sudo pacman -S --needed --noconfirm gum
@@ -216,7 +225,9 @@ yay -S --needed --noconfirm \
 sudo pacman -S --needed --noconfirm \
     ttf-jetbrains-mono-nerd \
     noto-fonts-emoji \
-    otf-font-awesome
+    otf-font-awesome \
+    noto-fonts-cjk \
+    noto-fonts
 
 fc-cache -fv
 
