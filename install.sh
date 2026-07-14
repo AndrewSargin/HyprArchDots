@@ -118,7 +118,9 @@ sudo pacman -S --needed --noconfirm \
     nautilus \
     nvim \
     stow \
-    obsidian
+    obsidian \
+    tree-sitter \
+    tree-sitter-cli
 
 yay -S --needed --noconfirm \
     python-setuptools \
