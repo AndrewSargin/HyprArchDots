@@ -91,6 +91,8 @@ require("lazy").setup({
 
 vim.lsp.config('clangd', {})
 vim.lsp.enable('clangd')
+vim.lsp.config('pyright', {})
+vim.lsp.enable('pyright')
 
 local cmp = require("cmp")
 cmp.setup({

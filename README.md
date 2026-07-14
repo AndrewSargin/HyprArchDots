@@ -41,6 +41,10 @@ If you chose to back up your config files, they are located in `~/old_configs/`.
 - Some fonts
 - Spotify
 - MPV
+- neovim
+- stow
+- obsidian
+- plugins for neovim
 #### With confirmation:
 - Firewall (UFW)
 - OBS

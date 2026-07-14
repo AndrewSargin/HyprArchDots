@@ -120,7 +120,8 @@ sudo pacman -S --needed --noconfirm \
     stow \
     obsidian \
     tree-sitter \
-    tree-sitter-cli
+    tree-sitter-cli \
+    pyright
 
 yay -S --needed --noconfirm \
     python-setuptools \
