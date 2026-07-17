@@ -126,7 +126,8 @@ sudo pacman -S --needed --noconfirm \
 yay -S --needed --noconfirm \
     python-setuptools \
     zscroll \
-    waybar-git
+    waybar-git \
+    gvfs-mtp
 
 success "Main packages are installed"
 
