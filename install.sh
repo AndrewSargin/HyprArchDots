@@ -127,7 +127,8 @@ yay -S --needed --noconfirm \
     python-setuptools \
     zscroll \
     waybar-git \
-    gvfs-mtp
+    gvfs-mtp \
+    qimgv-git
 
 success "Main packages are installed"
 
