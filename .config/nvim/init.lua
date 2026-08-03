@@ -89,22 +89,46 @@ require("lazy").setup({
     }
 })
 
-vim.lsp.config('clangd', {})
-vim.lsp.enable('clangd')
-vim.lsp.config('pyright', {})
-vim.lsp.enable('pyright')
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 local cmp = require("cmp")
 cmp.setup({
-    performance = {
-        max_view_entries = 7,
+    window = {
+        completion = cmp.config.window.bordered({
+            max_height = 7,
+        }),
+        documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
         ["<Tab>"] = cmp.mapping.select_next_item(),
         ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+
+        ["<C-n>"] = cmp.mapping.select_next_item(),
+        ["<C-p>"] = cmp.mapping.select_prev_item(),
+
+        ["<PageDown>"] = cmp.mapping.scroll_docs(4),
+        ["<PageUp>"] = cmp.mapping.scroll_docs(-4),
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
     }),
     sources = {
         { name = "nvim_lsp" },
     },
 })
+
+vim.lsp.config("clangd", {
+    capabilities = capabilities,
+})
+
+vim.lsp.config("pyright", {
+    capabilities = capabilities,
+})
+
+vim.lsp.config("qmlls6", {
+    capabilities = capabilities,
+    cmd = { "/usr/bin/qmlls6" },
+    filetypes = { "qml" },
+})
+
+vim.lsp.enable("clangd")
+vim.lsp.enable("pyright")
+vim.lsp.enable("qmlls6")
