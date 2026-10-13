@@ -6,6 +6,7 @@ Personal Arch Linux bootstrap script and configuration files for my Hyprland set
 ![Desktop](screenshots/Desktop.png)
 ![Desktop with apps](screenshots/Desktop_with_apps.png)
 ## WARNING!
+* **This is still WIP**
 * **The installation script (`install.sh`) is intended for a fresh Arch Linux with Hyprland.**
 * **It installs all packages I need for my personal setup.**
 * **The script also installs Japanese fonts and fcitx5 for Japanese input.**
